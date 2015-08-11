@@ -1,15 +1,158 @@
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>GMAIL Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+<title>GMAIL Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2 navbar-header">
+					<a class="navbar-brand" href=#><img src="logo.png"
+						class="img-responsive" alt="Imaginea" style="width: 90%;"> </a>
+				</div>
+				<div class="col-sm-10">
+					<div class="navbar-collapse collapse">
+						<form class="nav navbar-nav" style="width: 500px;">
+							<div class="dropdown form-group" style="width: 500px;">
+								<input class="form-control dropdown-toggle" type="text"
+									data-toggle="dropdown" style="width: 500px;">
 
 
+								<ul class="dropdown-menu" style="width: 500px;">
+									<li class="span2">
+										<form role="form" style="width: 500px;">
+											<div>
+												<div style="display: inline">
+													<a>Search </a>
+												</div>
+												<div class="dropdown" id="search" style="display: inline">
+													<button class="btn btn-default dropdown-toggle"
+														type="button" data-toggle="dropdown">
+														All Mail <span class="dropup"><span class="caret"></span></span><span
+															class="caret down"></span>
+													</button>
+													<ul class="dropdown-menu">
+														<li><a href="#">All Mail</a></li>
+														<li><a href="#">Inbox</a></li>
+														<li><a href="#">Starred</a></li>
+														<li><a href="#">Sent mails</a></li>
+														<li><a href="#">Drafts</a></li>
+														<li><a href="#">Chats</a></li>
+														<li><a href="#">Spam</a></li>
+														<li><a href="#">Trash</a></li>
+														<li class="divider"></li>
+														<li><a href="#">Mail & Spam & Trash</a></li>
+														<li class="divider"></li>
+														<li><a href="#">Read Mail</a></li>
+														<li><a href="#">Unread Mail</a></li>
+														<li class="divider"></li>
+														<li><a href="#">Social</a></li>
+														<li><a href="#">Promotion</a></li>
+														<li><a href="#">Update</a></li>
+														<li><a href="#">Forum</a></li>
+														<li class="divider"></li>
+														<li><a href="#">Citibank</a></li>
+														<li><a href="#">Icici</a></li>
+													</ul>
+												</div>
+
+											</div>
+											<div class="form-group">
+												<label for="email">From</label> <input type="email"
+													class="form-control" id="from">
+											</div>
+											<div class="form-group">
+												<label for="email">To</label> <input type="email"
+													class="form-control" id="to">
+											</div>
+											<div class="form-group">
+												<label for="subject">Subject</label> <input type="text"
+													class="form-control" id="subject">
+											</div>
+											<div class="form-group">
+												<label for="text">Has the words</label> <input type="text"
+													class="form-control" id="hasWords">
+											</div>
+											<div class="form-group">
+												<label for="text">Doesn't have</label> <input type="text"
+													class="form-control" id="doesntHave">
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox"> Has
+													attachement</label>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox"> Don't include
+													chats</label>
+											</div>
+
+											<div>
+												<div style="display: inline">
+													<a>Size </a>
+												</div>
+												<div class="dropdown" id="size" style="display: inline">
+													<button class="btn btn-default dropdown-toggle"
+														type="button" data-toggle="dropdown">
+														Greater than <span class="dropup"><span
+															class="caret"></span></span><span class="caret down"></span>
+													</button>
+													<ul class="dropdown-menu">
+														<li><a href="#">Greater than</a></li>
+														<li><a href="#">Less than</a></li>
+													</ul>
+												</div>
+												<div class="form-group" style="display: inline">
+													<input type="text" class="form-control" id="emailSize">
+												</div>
+												<div class="dropdown" id="MBKBBytes" style="display: inline">
+													<button class="btn btn-default dropdown-toggle"
+														type="button" data-toggle="dropdown">
+														MB <span class="dropup"><span class="caret"></span></span><span
+															class="caret down"></span>
+													</button>
+													<ul class="dropdown-menu">
+														<li class="span2"><a href="#">MB</a></li>
+														<li class="span2"><a href="#">MB</a></li>
+														<li class="span2"><a href="#">MB</a></li>
+													</ul>
+												</div>
+											</div>
+											<button type="submit" class="btn btn-primary">
+												<span class="glyphicon glyphicon-search"> </span>
+											</button>
+										</form>
+							</div>
+							<span class="caret"></span>
+							<button type="submit" class="btn btn-primary">
+								<span class="glyphicon glyphicon-search"> </span>
+							</button>
+						</form>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><span>Prabin</span></li>
+							<li><a href="#"></a></li>
+							<li><span class="glyphicon glyphicon-th"></span></li>
+							<li><a href="#"></a></li>
+							<li><span class="glyphicon glyphicon-info-sign"></span></li>
+							<li><a href="#"></a></li>
+							<li><div>
+									<img src="profile_pic.jpeg" class="img-responsive img-circle"
+										alt="Profile pic" style="width: 40px;">
+								</div></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
 </body>
 </html>
