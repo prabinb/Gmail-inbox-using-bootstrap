@@ -1,0 +1,30 @@
+.mail-type {
+ font-family: arial,sans-serif;
+ font-weight: bold;
+ color: black;
+ margin-top: 4px;
+ margin-bottom: 4px;
+
+}
+
+.mail-compose {
+ font-family: arial,sans-serif;
+ font-weight: bold;
+ color: white;
+ margin-top: 7px;
+ margin-bottom: 7px;
+}
+
+.mail-mail{
+color: #DD4B39;
+cursor: pointer;
+font-size: 14pt;
+line-height: 29px;
+}
+a:link {
+    color: #222;
+}
+/* visited link */
+a:visited {
+    color: #222;
+}

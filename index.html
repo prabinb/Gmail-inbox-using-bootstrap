@@ -6,6 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/gmail_inbox.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -154,5 +155,127 @@
 			</div>
 		</div>
 	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-10">
+						<div class="dropdown">
+							<div class="dropdown-toggle" data-toggle="dropdown">
+								<a class="mail-mail" href="#" style="color: red;">Mail <span
+									class="caret"></span></a>
+							</div>
+							<ul class="dropdown-menu">
+								<li><a href="#">Mail</a></li>
+								<li><a href="#">Contacts</a></li>
+								<li><a href="#">Task</a></li>
+						</div>
+					</div>
+				</div>
+			</div
+			<div class="col-sm-10">
+				<div class="row">
+					<div class="col-sm-1 dropdown">
+						<div class="dropdown-toggle" data-toggle="dropdown">
+							<button class="btn btn-default btn-block">
+								<input type="checkbox"><span> </span><span class="caret"></span>
+							</button>
+						</div>
+						<ul class="dropdown-menu dropdown-menu-left">
+							<li><span>All</span></li>
+							<li><span>None</span></li>
+							<li><span>Read</span></li>
+							<li><span>Unread</span></li>
+							<li><span>Starred</span></li>
+							<li><span>Unstarred</span></li>
+						</ul>
+					</div>
+					<div class="col-sm-1">
+						<button class="btn btn-default btn-block">
+							<span class="glyphicon glyphicon-repeat"></span>
+						</button>
+					</div>
+					<div class="col-sm-1 dropdown">
+						<div class="dropdown-toggle" data-toggle="dropdown">
+							<button class="btn btn-default btn-block">
+								More <span class="caret"></span>
+							</button>
+						</div>
+						<ul class="dropdown-menu dropdown-menu-left">
+							<li><span>Mark all as read</span></li>
+							<li class="divider"></li>
+							<li><span style="font-weight: itlaics;">Select
+									messages to see more action</span></li>
+						</ul>
+					</div>
+					<div class="col-sm-1" style="float:right;"></div>
+					<div class="col-sm-1 dropdown" style="float:right;">
+						<div class="dropdown-toggle" data-toggle="dropdown">
+							<button class="btn btn-default btn-block">
+								<span class="glyphicon glyphicon-cog"></span><span> </span><span class="caret"></span>
+							</button>
+						</div>
+						<ul class="dropdown-menu dropdown-menu-left">
+							<li><span>Mark all as read</span></li>
+							<li class="divider"></li>
+							<li><span style="font-weight: itlaics;">Select
+									messages to see more action</span></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-10">
+						<button class="btn btn-danger btn-xs"
+							style="margin-top: 5px; margin-bottom: 5px;">
+							<div class="mail-compose">
+								<a href="#" style="color: white;">COMPOSE</a>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-10">
+						<div class="mail-type">
+							<a href="#">Inbox</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-10">
+						<div class="mail-type">
+							<a href="#">Sent Mail</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-10">
+						<div class="mail-type">
+							<a href="#">Drafts</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-10">
+						<div class="mail-type">
+							<a href="#">Circles</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-10"></div>
+		</div>
+	</div>
 </body>
 </html>
