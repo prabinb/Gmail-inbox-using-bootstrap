@@ -15,20 +15,21 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-2 navbar-header">
+				<div class="col-xs-2 navbar-header">
 					<a class="navbar-brand" href=#><img src="logo.png"
 						class="img-responsive" alt="Imaginea" style="width: 90%;"> </a>
 				</div>
-				<div class="col-sm-10">
+				<div class="col-xs-10">
 					<div class="navbar-collapse collapse">
-						<form class="nav navbar-nav" style="width: 500px; margin-top:10px;">
-							<div class="dropdown form-group" style="width: 500px;">
-								<input class="form-control dropdown-toggle" type="text"
-									data-toggle="dropdown" style="width: 500px;">
-							    
-
+						<form class="nav navbar-nav"
+							style="width: 500px; margin-top: 10px;">
+							<div class="form-group" style="width: 500px; position: relative;">
+								<input class="form-control" type="text" style="width: 500px;">
+								<a class="caret dropdown dropdown-toggle" data-toggle="dropdown"
+									style="display: inline; position:absolute; top:14px; right:7px;" href="#"></a>
+									
 								<ul class="dropdown-menu" style="width: 500px;">
-									<li style="margin:10px;">
+									<li style="margin: 10px;">
 										<form role="form" style="width: 500px;">
 											<div>
 												<div style="display: inline">
@@ -99,7 +100,7 @@
 												<div style="display: inline">
 													<a>Size </a>
 												</div>
-												<div class="dropdown" id="size" style="display: inline">
+												<div class="dropdown" id="size" style="display: inline;">
 													<button class="btn btn-default dropdown-toggle"
 														type="button" data-toggle="dropdown">
 														Greater than <span class="dropup"><span
@@ -110,7 +111,7 @@
 														<li><a href="#">Less than</a></li>
 													</ul>
 												</div>
-												<div class="form-group" style="display: inline">
+												<div class="form-group" style="display: inline-block;">
 													<input type="text" class="form-control" id="emailSize">
 												</div>
 												<div class="dropdown" id="MBKBBytes" style="display: inline">
@@ -131,20 +132,26 @@
 											</button>
 										</form>
 							</div>
-							<span class="caret"></span>
-							<button type="submit" class="btn btn-primary" style="margin-top:10px;">
+							</button>
+							<button type="submit" class="btn btn-primary"
+								style="margin-top: 10px;">
 								<span class="glyphicon glyphicon-search"> </span>
 							</button>
-						</form>
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#" data-toggle="tooltip" data-placement="top" title="Looking for google+? Click on Google Apps icon on right.">Prabin</a></li>
-							<li><a class="glyphicon glyphicon-th" data-toggle="tooltip" data-placement="top" title="Google Apps"></a></li>
-							<li><a class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="top" title="Google Notifications"></a></li>
-							<li><a data-toggle="tooltip" data-placement="top" title="Google Account:xyz@gmail.com">
-									<img src="profile_pic.jpeg" class="img-responsive img-circle"
+
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#" data-toggle="tooltip" data-placement="top"
+									title="Looking for google+? Click on Google Apps icon on right.">Prabin</a></li>
+								<li><a class="glyphicon glyphicon-th" data-toggle="tooltip"
+									data-placement="top" title="Google Apps"></a></li>
+								<li><a class="glyphicon glyphicon-info-sign"
+									data-toggle="tooltip" data-placement="top"
+									title="Google Notifications"></a></li>
+								<li><a data-toggle="tooltip" data-placement="top"
+									title="Google Account:xyz@gmail.com"> <img
+										src="profile_pic.jpeg" class="img-responsive img-circle"
 										alt="Profile pic" style="width: 40px;">
 								</a></li>
-						</ul>
+							</ul>
 					</div>
 				</div>
 			</div>
@@ -154,8 +161,7 @@
 		<div class="row">
 			<div class="col-sm-2">
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-10">
+					<div class="col-sm-12">
 						<div class="dropdown">
 							<div class="dropdown-toggle" data-toggle="dropdown">
 								<a class="mail-mail" href="#" style="color: red;">Mail <span
@@ -168,15 +174,16 @@
 						</div>
 					</div>
 				</div>
-			</div
+			</div>
 			<div class="col-sm-10">
 				<div class="row">
-					<div class="col-sm-1 dropdown">
-						<div class="dropdown-toggle" data-toggle="dropdown">
-							<button class="btn btn-default btn-block">
+				
+					<div class="col-sm-2">
+						<div class="dropdown">
+							<button class="btn btn-block button-custom dropdown-toggle" data-toggle="dropdown">
 								<input type="checkbox"><span> </span><span class="caret"></span>
 							</button>
-						</div>
+						
 						<ul class="dropdown-menu dropdown-menu-left">
 							<li><a>All</a></li>
 							<li><a>None</a></li>
@@ -185,55 +192,60 @@
 							<li><a>Starred</a></li>
 							<li><a>Unstarred</a></li>
 						</ul>
+						</div>
 					</div>
-					<div class="col-sm-1">
-						<button class="btn btn-default btn-block">
+					<div class="col-sm-2">
+						<button class="btn btn-block button-custom">
 							<span class="glyphicon glyphicon-repeat"></span>
 						</button>
 					</div>
-					<div class="col-sm-1 dropdown">
-						<div class="dropdown-toggle" data-toggle="dropdown">
-							<button class="btn btn-default btn-block">
+					<div class="col-sm-2">
+					<div class="dropdown">
+							<button class="btn btn-block button-custom dropdown-toggle" data-toggle="dropdown">
 								More <span class="caret"></span>
 							</button>
-						</div>
 						<ul class="dropdown-menu dropdown-menu-left">
 							<li><a>Mark all as read</a></li>
 							<li class="divider"></li>
-							<li><a style="font-style: italic;">Select
-									messages to see more action</a></li>
+							<li><a style="font-style: italic;">Select messages to
+									see more action</a></li>
 						</ul>
 					</div>
-					<div class="col-sm-1" style="float: right;"></div>
-					<div class="col-sm-1 dropdown" style="float: right;">
-						<div class="dropdown-toggle" data-toggle="dropdown">
-							<button class="btn btn-default btn-block">
+					</div>
+					<div class="col-sm-2"></div>
+					<div class="col-sm-2"></div>
+					<div class="col-sm-2">
+					<div class="dropdown">
+							<button class="btn btn-block button-custom dropdown-toggle" data-toggle="dropdown" style="float:right;">
 								<span class="glyphicon glyphicon-cog"></span><span> </span><span
 									class="caret"></span>
 							</button>
-						</div>
-						<ul class="dropdown-menu dropdown-menu-left" style="margin: 5px;">
-							<li><a>Display density:</a></li>
-							<li><span class="glyphicon glyphicon-ok"><a> Comfortable</a></span></li>
-							<li><a> </span><span> Cozy</a></li>
-							<li><a> </span><span> Compact</a></li>
+												<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="#">Display density:</a></li>
+							<li><span class="glyphicon glyphicon-ok"><a href="#">
+										Comfortable</a></span></li>
+							<li><a href="#"> </span><span> Cozy</a></li>
+							<li><a href="#"> </span><span> Compact</a></li>
 							<li class="divider"></li>
-                            <li><a>Configure inbox</a></li>
-                            <li class="divider"></li>
-                            <li><a>Settings</a></li>
-                            <li><a>help</a></li>
+							<li><a href="#">Configure inbox</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Settings</a></li>
+							<li><a href="#">help</a></li>
 						</ul>
+						</div>
 					</div>
 				</div>
-
+				
 			</div>
 		</div>
-		<hr>
+	</div>
+		<hr class="hr-custom">
+		<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-2">
+			<div class="col-sm-2 nav-side-panel">
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-10">
+					<div class="col-sm-12">
+
 						<button class="btn btn-danger btn-xs"
 							style="margin-top: 5px; margin-bottom: 5px;">
 							<div class="mail-compose">
@@ -243,243 +255,213 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-10">
-						<div class="mail-type">
-							<a href="#">Inbox</a>
-						</div>
+					<div class="col-sm-12">
+						<a href="#">Inbox</a>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-10">
-						<div class="mail-type">
-							<a href="#">Sent Mail</a>
-						</div>
+					<div class="col-sm-12">
+						<a href="#">Sent Mail</a>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-10">
-						<div class="mail-type">
-							<a href="#">Drafts</a>
-						</div>
+					<div class="col-sm-12">
+						<a href="#">Drafts</a>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-10">
-						<div class="mail-type">
-							<a href="#">Circles</a>
-						</div>
+					<div class="col-sm-12">
+						<a href="#">Circles</a>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-10">
-						<div class="mail-type">
-							<a href="#">Starred</a>
-						</div>
+					<div class="col-sm-12">
+						<a href="#">Starred</a>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-10">
-						<div class="mail-type">
-							<a href="#">Important</a>
-						</div>
+					<div class="col-sm-12">
+						<a href="#">Important</a>
 					</div>
 				</div>
 				<div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-10">
-                    <div class="mail-type">
-                        <a href="#">Chats</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-10">
-                <div class="mail-type">
-                    <a href="#">All Mail</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10">
-            <div class="mail-type">
-                <a href="#">Spam</a>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-10">
-        <div class="mail-type">
-            <a href="#">Thrash</a>
-        </div>
-    </div>
-</div>
+					<div class="col-sm-12">
+						<a href="#">Chats</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<a href="#">All Mail</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<a href="#">Spam</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<a href="#">Thrash</a>
+					</div>
+				</div>
 			</div>
 			<div class="col-sm-10">
-				<div class="row">
-					<ul class="nav nav-tabs nav-justified">
-						<li class="active"><a data-toggle="tab" href="#"><span
-								class="glyphicon glyphicon-inbox"></span> Primary</a></li>
-						<li><a data-toggle="tab" href="#"><span
-								class="glyphicon glyphicon-user"></span> Social</a></li>
-						<li><a data-toggle="tab" href="#"><span
-								class="glyphicon glyphicon-tags"></span> Promotions</a></li>
-						<li><a data-toggle="tab" href="#"><span
-								class="glyphicon glyphicon-info-sign"></span> Updates</a></li>
-						<li><a data-toggle="tab" href="#"><span
-								class="glyphicon glyphicon-folder-open"></span> Forums</a></li>
-					</ul>
-				</div>
+
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active"><a data-toggle="tab" href="#"><span
+							class="glyphicon glyphicon-inbox"></span> Primary</a></li>
+					<li><a data-toggle="tab" href="#"><span
+							class="glyphicon glyphicon-user"></span> Social</a></li>
+					<li><a data-toggle="tab" href="#"><span
+							class="glyphicon glyphicon-tags"></span> Promotions</a></li>
+					<li><a data-toggle="tab" href="#"><span
+							class="glyphicon glyphicon-info-sign"></span> Updates</a></li>
+					<li><a data-toggle="tab" href="#"><span
+							class="glyphicon glyphicon-folder-open"></span> Forums</a></li>
+				</ul>
+
 				<hr>
 				<div class="row">
-					<div class="col-sm-2">
-						<div class="col-sm-2">
+					<div class="col-xs-2">
+						<div class="col-xs-2">
 							<label><input type="checkbox"></label>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2">
 							<span class="glyphicon glyphicon-star-empty"></span>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2">
 							<span class="glyphicon glyphicon-heart-empty"></span>
 						</div>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>Sender's email</span>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>Email header</span>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-3">
 						<span>Email text</span>
 					</div>
-					<div class="col-sm-1">
+					<div class="col-xs-1">
 						<span class="glyphicon glyphicon-paperclip"></span>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>date</span>
 					</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-sm-2">
-						<div class="col-sm-2">
+					<div class="col-xs-2">
+						<div class="col-xs-2">
 							<label><input type="checkbox"></label>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2">
 							<span class="glyphicon glyphicon-star-empty"></span>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2">
 							<span class="glyphicon glyphicon-heart-empty"></span>
 						</div>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>Sender's email</span>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>Email header</span>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-3">
 						<span>Email text</span>
 					</div>
-					<div class="col-sm-1">
+					<div class="col-xs-1">
 						<span class="glyphicon glyphicon-paperclip"></span>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>date</span>
 					</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-sm-2">
-						<div class="col-sm-2">
+					<div class="col-xs-2">
+						<div class="col-xs-2">
 							<label><input type="checkbox"></label>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2">
 							<span class="glyphicon glyphicon-star-empty"></span>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2">
 							<span class="glyphicon glyphicon-heart-empty"></span>
 						</div>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>Sender's email</span>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>Email header</span>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-3">
 						<span>Email text</span>
 					</div>
-					<div class="col-sm-1">
+					<div class="col-xs-1">
 						<span class="glyphicon glyphicon-paperclip"></span>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>date</span>
 					</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-sm-2">
-						<div class="col-sm-2">
+					<div class="col-xs-2">
+						<div class="col-xs-2">
 							<label><input type="checkbox"></label>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2">
 							<span class="glyphicon glyphicon-star-empty"></span>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2">
 							<span class="glyphicon glyphicon-heart-empty"></span>
 						</div>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>Sender's email</span>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>Email header</span>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-3">
 						<span>Email text</span>
 					</div>
-					<div class="col-sm-1">
+					<div class="col-xs-1">
 						<span class="glyphicon glyphicon-paperclip"></span>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>date</span>
 					</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-sm-2">
-						<div class="col-sm-2">
+					<div class="col-xs-2">
+						<div class="col-xs-2">
 							<label><input type="checkbox"></label>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2">
 							<span class="glyphicon glyphicon-star-empty"></span>
 						</div>
-						<div class="col-sm-2">
+						<div class="col-xs-2">
 							<span class="glyphicon glyphicon-heart-empty"></span>
 						</div>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>Sender's email</span>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>Email header</span>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-3">
 						<span>Email text</span>
 					</div>
-					<div class="col-sm-1">
+					<div class="col-xs-1">
 						<span class="glyphicon glyphicon-paperclip"></span>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<span>date</span>
 					</div>
 				</div>
@@ -487,5 +469,17 @@
 			</div>
 		</div>
 	</div>
+	<style>
+@media only screen and (max-width : 780px) {
+	.nav-panel {
+		display: none;
+	}
+}
+
+@
+body {
+	font-family: arial, sans-serif;
+}
+</style>
 </body>
 </html>

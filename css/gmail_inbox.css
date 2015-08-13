@@ -1,10 +1,8 @@
-.mail-type {
- font-family: arial,sans-serif;
- font-weight: bold;
- color: black;
- margin-top: 4px;
- margin-bottom: 4px;
-
+.nav-side-panel {
+ font-family: arial, sans-serif;
+ color: #222;
+ margin-top: 5px;
+ margin-bottom: 5px;
 }
 
 .mail-compose {
@@ -27,4 +25,14 @@ a:link {
 /* visited link */
 a:visited {
     color: #222;
+}
+hr {
+	margin-top: 0px;
+	margin-botton: 0px;
+}
+.button-custom {
+	width: 60%;
+}
+.hr-custom{
+	margin-top: 10px;
 }
