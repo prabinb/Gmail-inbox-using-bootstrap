@@ -28,11 +28,33 @@ a:visited {
 }
 hr {
 	margin-top: 0px;
-	margin-botton: 0px;
+	margin-bottom: 0px;
+	border-bottom-color: gray;
+	border-top-color:gray;
 }
 .button-custom {
 	width: 60%;
 }
-.hr-custom{
+.hr-custom {
 	margin-top: 10px;
+}
+ul.nav-tabs li.active a {
+	border-top-width: 3px;
+}
+.light-gray-background{
+	background-color: rgba(243, 243, 243, .85);
+	color: #222;
+}
+.email-row-custom{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.zero-padded-column-custom{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.vcenter-custom {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
