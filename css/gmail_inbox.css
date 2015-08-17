@@ -35,8 +35,11 @@ hr {
 .button-custom {
 	width: 60%;
 }
-.hr-custom {
-	margin-top: 10px;
+hr.hr-custom {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	position: absolute;
+  	top: 130px;
 }
 ul.nav-tabs li.active a {
 	border-top-width: 3px;
@@ -57,4 +60,11 @@ ul.nav-tabs li.active a {
     display: inline-block;
     vertical-align: middle;
     float: none;
+    letter-spacing: normal;
+}
+a:hover {
+    background:  rgba(243, 243, 243, .85);
+}
+.affix{
+	top: 130px;
 }
