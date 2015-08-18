@@ -9,7 +9,9 @@
 <link rel="stylesheet" href="css/gmail_inbox.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/gmail_inbox.js"></script>
 <style>
 @media only screen and (max-width : 780px) {
 	.nav-panel {
@@ -202,10 +204,12 @@ body {
 					</div>
 				</div>
 			</div>
-			<div class="row" style="background-color: white; height: 50px; letter-spacing: -4px">
+			<div class="row"
+				style="background-color: white; height: 50px; letter-spacing: -4px">
 				<div class="col-sm-2 vcenter-custom">
 					<div class="dropdown vcenter-custom">
-						<div class="dropdown-toggle vcenter-custom" data-toggle="dropdown" style="margin: 10px 0;">
+						<div class="dropdown-toggle vcenter-custom" data-toggle="dropdown"
+							style="margin: 10px 0;">
 							<a class="mail-mail" href="#" style="color: red;">Mail <span
 								class="caret"></span></a>
 						</div>
@@ -221,10 +225,10 @@ body {
 						<button
 							class="btn btn-block button-custom dropdown-toggle light-gray-background"
 							data-toggle="dropdown" style="position: relative; height: 34px;">
-						<span> </span><span class="caret"></span>
+							<span> </span><span class="caret"></span>
 						</button>
 						<div style="position: absolute; top: 5px; left: 40px;">
-						<input type="checkbox">
+							<input type="checkbox" id="selectAllMessages">
 						</div>
 						<ul class="dropdown-menu dropdown-menu-left">
 							<li><a>All</a></li>
@@ -286,9 +290,10 @@ body {
 	<div class="container-fluid" style="position: absolute; top: 130px">
 		<div class="row">
 			<nav class="col-sm-2">
-				<ul class="nav nav-stacked affix"  data-spy="affix" data-offset-top="1">
+				<ul class="nav nav-stacked affix" data-spy="affix"
+					data-offset-top="1">
 					<li><button class="btn btn-danger btn-sm"
-							style="margin-top: 5px; margin-bottom: 5px;">
+							style="margin-top: 5px; margin-bottom: 5px;" id="composeMail">
 							<span class="mail-compose" style="color: white;">COMPOSE </span>
 						</button></li>
 					<li><a href="#" style="padding: 0px 0px;">Inbox</a></li>
@@ -303,8 +308,9 @@ body {
 					<li><a href="#" style="padding: 0px 0px;">Thrash</a></li>
 				</ul>
 			</nav>
-			<div class="col-sm-10" style="overflow-y: auto; height: calc(100vh - 134px);">
-				<ul class="nav nav-tabs nav-justified">
+			<div class="col-sm-10"
+				style="overflow-y: auto; height: calc(100vh - 134px);">
+				<ul class="nav nav-tabs nav-justified light-gray-background">
 					<li class="active"><a data-toggle="tab" href="#primary"><span
 							class="glyphicon glyphicon-inbox"></span> Primary</a></li>
 					<li><a data-toggle="tab" href="#social"><span
@@ -318,7 +324,7 @@ body {
 				</ul>
 				<hr>
 
-				<div class="tab-content">
+				<div class="tab-content" id="messageTabs">
 					<div id="primary" class="tab-pane fade in active">
 						<div class="row email-row-custom light-gray-background"
 							style="cursor: pointer;">
@@ -891,65 +897,65 @@ body {
 						</div>
 						<hr>
 						<div class="row email-row-custom light-gray-background"
-                        style="cursor: pointer;">
-                        <div class="col-xs-2 vcenter-custom">
-                            <div class="col-xs-2 vcenter-custom">
-                                <label><input type="checkbox" class="vcenter-custom"></label>
-                            </div>
-                            <div class="col-xs-2 vcenter-custom">
-                                <span class="glyphicon glyphicon-star-empty vcenter-custom"></span>
-                            </div>
-                            <div class="col-xs-2 vcenter-custom">
-                                <span class="glyphicon glyphicon-heart-empty vcenter-custom"></span>
-                            </div>
-                        </div>
-                        <div class="col-xs-2 vcenter-custom">
-                            <span>Sender's email</span>
-                        </div>
-                        <div class="col-xs-2 vcenter-custom">
-                            <span>Email header</span>
-                        </div>
-                        <div class="col-xs-3 vcenter-custom">
-                            <span>Email text</span>
-                        </div>
-                        <div class="col-xs-1 vcenter-custom">
-                            <span class="glyphicon glyphicon-paperclip vcenter-custom"></span>
-                        </div>
-                        <div class="col-xs-1 vcenter-custom">
-                            <span>date</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row email-row-custom light-gray-background"
-                        style="cursor: pointer;">
-                        <div class="col-xs-2 vcenter-custom">
-                            <div class="col-xs-2 vcenter-custom">
-                                <label><input type="checkbox" class="vcenter-custom"></label>
-                            </div>
-                            <div class="col-xs-2 vcenter-custom">
-                                <span class="glyphicon glyphicon-star-empty vcenter-custom"></span>
-                            </div>
-                            <div class="col-xs-2 vcenter-custom">
-                                <span class="glyphicon glyphicon-heart-empty vcenter-custom"></span>
-                            </div>
-                        </div>
-                        <div class="col-xs-2 vcenter-custom">
-                            <span>Sender's email</span>
-                        </div>
-                        <div class="col-xs-2 vcenter-custom">
-                            <span>Email header</span>
-                        </div>
-                        <div class="col-xs-3 vcenter-custom">
-                            <span>Email text</span>
-                        </div>
-                        <div class="col-xs-1 vcenter-custom">
-                            <span class="glyphicon glyphicon-paperclip vcenter-custom"></span>
-                        </div>
-                        <div class="col-xs-1 vcenter-custom">
-                            <span>date</span>
-                        </div>
-                    </div>
-                    <hr>
+							style="cursor: pointer;">
+							<div class="col-xs-2 vcenter-custom">
+								<div class="col-xs-2 vcenter-custom">
+									<label><input type="checkbox" class="vcenter-custom"></label>
+								</div>
+								<div class="col-xs-2 vcenter-custom">
+									<span class="glyphicon glyphicon-star-empty vcenter-custom"></span>
+								</div>
+								<div class="col-xs-2 vcenter-custom">
+									<span class="glyphicon glyphicon-heart-empty vcenter-custom"></span>
+								</div>
+							</div>
+							<div class="col-xs-2 vcenter-custom">
+								<span>Sender's email</span>
+							</div>
+							<div class="col-xs-2 vcenter-custom">
+								<span>Email header</span>
+							</div>
+							<div class="col-xs-3 vcenter-custom">
+								<span>Email text</span>
+							</div>
+							<div class="col-xs-1 vcenter-custom">
+								<span class="glyphicon glyphicon-paperclip vcenter-custom"></span>
+							</div>
+							<div class="col-xs-1 vcenter-custom">
+								<span>date</span>
+							</div>
+						</div>
+						<hr>
+						<div class="row email-row-custom light-gray-background"
+							style="cursor: pointer;">
+							<div class="col-xs-2 vcenter-custom">
+								<div class="col-xs-2 vcenter-custom">
+									<label><input type="checkbox" class="vcenter-custom"></label>
+								</div>
+								<div class="col-xs-2 vcenter-custom">
+									<span class="glyphicon glyphicon-star-empty vcenter-custom"></span>
+								</div>
+								<div class="col-xs-2 vcenter-custom">
+									<span class="glyphicon glyphicon-heart-empty vcenter-custom"></span>
+								</div>
+							</div>
+							<div class="col-xs-2 vcenter-custom">
+								<span>Sender's email</span>
+							</div>
+							<div class="col-xs-2 vcenter-custom">
+								<span>Email header</span>
+							</div>
+							<div class="col-xs-3 vcenter-custom">
+								<span>Email text</span>
+							</div>
+							<div class="col-xs-1 vcenter-custom">
+								<span class="glyphicon glyphicon-paperclip vcenter-custom"></span>
+							</div>
+							<div class="col-xs-1 vcenter-custom">
+								<span>date</span>
+							</div>
+						</div>
+						<hr>
 					</div>
 					<div id="social" class="tab-pane fade">
 						<div class="row email-row-custom light-gray-background"
@@ -1113,6 +1119,40 @@ body {
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="new-message-window" id="newMessage">
+		<div class="container-fluid">
+			<div class="row" style="background: #404040; height: 35px; cursor:pointer;">
+				<div class="col-sm-3 vcenter-custom" style="height: 35px; top: 7px;">
+					<span style="color: white; font-family: arial, sans-serif; font-size: 13px;">New
+						Message</span>
+				</div>
+				<div class="col-sm-6 vcenter-custom"></div>
+				<div class="col-cm-1 vcenter-custom" id="minimizeNewMessage">
+					<span class="glyphicon glyphicon-minus" style="color: white;"></span>
+				</div>
+				<div class="col-cm-1 vcenter-custom">
+					<span class="glyphicon glyphicon-resize-full" style="color: white;"></span>
+				</div>
+				<div class="col-cm-1 vcenter-custom" id="removeMessage">
+					<span class="glyphicon glyphicon-remove" style="color: white;"></span>
+				</div>
+			</div>
+			<div class="row" style="height: 35px">
+				<div class="col-sm-12 vcenter-custom"
+					style="height: 35px; top: 7px;">
+					<span style="font-size: 13px; color: #222;">Recipients</span>
+				</div>
+			</div>
+			<hr style="margin-left: -15px; margin-right: -15px;">
+			<div class="row" style="height: 35px">
+				<div class="col-sm-12 vcenter-custom"
+					style="height: 35px; top: 7px;">
+					<span style="font-size: 13px; color: #222;">Subject</span>
+				</div>
+			</div>
+			<hr style="margin-left: -15px; margin-right: -15px;">
 		</div>
 	</div>
 </body>

@@ -68,3 +68,17 @@ a:hover {
 .affix{
 	top: 130px;
 }
+.new-message-window{
+  position: absolute;
+  bottom: 0px;
+  height: 455px;
+  width: 518px;
+  right: 24px;
+  border: 1px solid black;
+  z-index: 9999;
+  background: white;
+  font-family: arial, sans-serif;
+}
+.yellow-background{
+	background: yellow;
+}
