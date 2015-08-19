@@ -51,6 +51,7 @@ ul.nav-tabs li.active a {
 .email-row-custom{
 	margin-right: 0px;
 	margin-left: 0px;
+	letter-spacing: -6px;
 }
 .zero-padded-column-custom{
 	padding-left: 0px;
@@ -61,6 +62,11 @@ ul.nav-tabs li.active a {
     vertical-align: middle;
     float: none;
     letter-spacing: normal;
+}
+.truncate-email-text{
+	text-overflow: ellipsis;
+	overflow: hidden;
+  	white-space: nowrap;
 }
 a:hover {
     background:  rgba(243, 243, 243, .85);

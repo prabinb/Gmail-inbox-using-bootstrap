@@ -1,0 +1,630 @@
+var primary = {
+			mails: [
+					{
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     }
+				  	]
+			},
+			
+social = {
+			mails: [
+					{
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     }
+				  	]
+			},
+promotions = {
+			mails: [
+					{
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     },
+				     {
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	},
+				    {
+			           checked : false,
+			           starred : false,
+			           important : false,
+			           sender : "test@pramati.com",
+			           header : "Web Developer",
+			           text : "Using Moustache to render the emails",
+			           hasAttachment: false,
+			           date : "Aug 18"
+				     }
+				  	]
+			},
+updates = {
+			mails: [
+					{
+			          checked : false,
+			          starred : false,
+			          important : false,
+			          sender : "test@pramati.com",
+			          header : "Web Developer",
+			          text : "Using Moustache to render the emails",
+			          hasAttachment: false,
+			          date : "Aug 18"
+			    	}
+			    	]
+		},
+forums = {
+			mails:[]
+			}
