@@ -85,6 +85,24 @@ a:hover {
   background: white;
   font-family: arial, sans-serif;
 }
+.search-window{
+	position: absolute;
+	z-index: 9999;
+	background: white;
+	border: 1px solid #ccc;
+}	
 .yellow-background{
 	background: yellow;
+}
+.search-container-row {
+	margin-top: 2px;
+ 	margin-bottom: 2px;
+}
+.dropdown, .dropup{
+  top: -3px;
+  left: 8px;
+}
+.search-container-caret{
+	position: relative;
+ 	top: 3px;
 }

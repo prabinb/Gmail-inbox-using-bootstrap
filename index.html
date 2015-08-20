@@ -17,30 +17,30 @@
 {{#mails}}
 <div class="row email-row-custom light-gray-background"
 style="cursor: pointer;">
-<div class="col-xs-2 col-sm-2 vcenter-custom">
-    <div class="col-xs-3 col-sm-2 vcenter-custom xs-font-10 xs-padding-none">
+<div class="col-xs-2 col-sm-2 col-md-2 vcenter-custom">
+    <div class="col-xs-3 col-sm-4 col-md-2 vcenter-custom xs-font-10 xs-padding-none format-emails-icons">
         <label><input type="checkbox" class="vcenter-custom"></label>
     </div>
-    <div class="col-xs-3 col-sm-2 vcenter-custom xs-font-10 xs-padding-none xs-email-star">
+    <div class="col-xs-3 col-sm-4 col-md-2 vcenter-custom xs-font-10 xs-padding-none xs-email-star format-emails-icons">
         <span class="glyphicon glyphicon-star-empty vcenter-custom"></span>
     </div>
-    <div class="col-xs-6 col-sm-2 vcenter-custom xs-font-10 xs-padding-none xs-display-hidden">
+    <div class="col-xs-6 col-sm-4 col-md-2 vcenter-custom xs-font-10 xs-padding-none xs-display-hidden format-emails-icons">
         <span class="glyphicon glyphicon-heart-empty vcenter-custom"></span>
     </div>
 </div>
-<div class="col-xs-10 col-sm-2 vcenter-custom truncate-email-text email-senders">
+<div class="col-xs-10 col-sm-2 col-md-2 vcenter-custom truncate-email-text xs-email-sender format-emails-text">
     <span>{{sender}}</span>
 </div>
-<div class="col-xs-12 col-sm-2 vcenter-custom truncate-email-text email-rest">
+<div class="col-xs-12 col-sm-2 col-md-2 vcenter-custom truncate-email-text xs-email-rest format-emails-text">
     <span>{{header}}</span>
 </div>
-<div class="col-xs-12 col-sm-2 vcenter-custom truncate-email-text email-rest">
+<div class="col-xs-12 col-sm-2 col-md-2 vcenter-custom truncate-email-text xs-email-rest format-emails-text">
     <span>{{text}}</span>
 </div>
-<div class="col-xs-1 col-sm-1 vcenter-custom xs-font-10 xs-email-paper-clip">
+<div class="col-xs-1 col-sm-1 col-md-1 vcenter-custom xs-font-10 xs-email-paper-clip format-emails-icons">
     <span class="glyphicon glyphicon-paperclip vcenter-custom"></span>
 </div>
-<div class="col-xs-3 col-sm-2 vcenter-custom xs-font-10 xs-email-date">
+<div class="col-xs-3 col-sm-2 col-md-2 vcenter-custom xs-font-10 xs-email-date  format-emails-text">
     <span>{{date}}</span>
 </div>
 </div>
@@ -49,13 +49,66 @@ style="cursor: pointer;">
 
 </script>
 <style>
-@media only screen and (max-width : 500px) {
-  .sm-hide-panel {
-    display: none;
-  }
-}
 @media only screen and (max-width : 321px) {
-	.xs-hide-panel {
+	.xs-padding-none {
+		padding: 0;
+	}
+	.xs-email-sender {
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.xs-email-rest {
+		font-size: 12px;
+	}
+	.xs-display-hidden {
+		display: none;
+	}
+	.xs-email-paper-clip {
+		position: relative;
+		right: -192px;
+		font-size: 10px;
+		bottom: 66px;
+	}
+	.xs-email-date {
+		position: relative;
+		right: -177px;
+		font-size: 10px;
+		bottom: 65px;
+	}
+	.xs-email-star {
+		position: relative;
+		left: 220px;
+		top: 40px;
+	}
+	.xs-font-10 {
+		font-size: 10px;
+	}
+	.nav-tabs>li {
+		display: none;
+	}
+	.mobile-open.nav-tabs>li {
+		display: block;
+	}
+	.nav-tabs>li.active {
+		display: block;
+	}
+}
+
+@media only screen and (min-width : 322px) and (max-width : 767px) {
+	.format-emails-icons {
+		display: inline-block;
+		width: 1vw;
+	}
+	.format-emails-text {
+		width: 20vw;
+	}
+	.sm-hide-panel {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	.sm-hide-panel {
 		display: none;
 	}
 	.row-offcanvas {
@@ -80,49 +133,6 @@ style="cursor: pointer;">
 	.main-tab-section {
 		margin-top: 65px;
 	}
-	.xs-padding-none {
-		padding: 0;
-	}
-	.email-senders {
-	  font-size: 12px;
-	  font-weight: bold;
-	}
-	.email-rest {
-	  font-size: 12px;
-	}
-	.xs-display-hidden {
-	  display: none;
-	}
-	.xs-email-paper-clip {
-	  position: relative;
-	  right: -192px;
-	  font-size: 10px;
-	  bottom: 66px;
-	}
-	.xs-email-date {
-	  position: relative;
-	  right: -177px;
-	  font-size: 10px;
-	  bottom: 65px;
-	}
-	.xs-email-star {
-	  position: relative;
-	  left: 220px;
-	  top: 40px;
-	}
-	.xs-font-10 {
-	  font-size: 10px;
-	}
-	.nav-tabs > li {
-	  display: none;
-	}
-	.mobile-open.nav-tabs>li{
-	  display: block;
-	}
-	.nav-tabs>li.active{
-	  display: block;
-	}
-	  
 }
 
 @
@@ -150,24 +160,27 @@ body {
 			</div>
 			<div class="navbar-collapse collapse">
 				<div class="row">
-					<div class="col-sm-2">
+					<div class="col-xs-2">
 						<a class="navbar-brand" href=#><img src="logo.png"
 							class="img-responsive" alt="Imaginea" style="width: 90%;">
 						</a>
 					</div>
-					<div class="col-sm-7">
+					<div class="col-xs-6">
 						<form class="nav navbar-nav"
-							style="width: 550px; margin-top: 10px;">
-							<div class="form-group" style="width: 550px; position: relative;">
+							style="width: 40vw; margin-top: 10px;">
+							<div class="form-group" style="width: 40vw; position: relative;">
 								<input class="form-control" type="text"> <a
-									class="caret dropdown dropdown-toggle" data-toggle="dropdown"
+									class="caret" id="searchCaret"
 									style="display: inline; position: absolute; top: 14px; right: 7px;"
-									href="#"></a>
+									href="#"> </a>
 
-								<ul class="dropdown-menu" style="width: 550px; margin-top: 0px;">
-									<li class="container" style="width: inherit;">
+								<div class="search-window"
+									style="width: 40vw; margin-top: -1px; display: none;"
+									id="searchContainer">
+									<div class="container"
+										style="width: inherit; margin-top: 10px; margin-bottom: 10px;">
 										<div class="col-md-12">
-											<div class="row">
+											<div class="row search-container-row">
 												<div
 													class="col-md-1 vcenter-custom zero-padded-column-custom">
 													<span>Search</span>
@@ -178,7 +191,7 @@ body {
 														<button class="btn btn-default dropdown-toggle btn-sm"
 															type="button" data-toggle="dropdown">
 															All Mail <span class="dropup"><span class="caret"></span></span><span
-																class="caret down"></span>
+																class="caret down search-container-caret"></span>
 														</button>
 														<ul class="dropdown-menu sub-menu">
 															<li><a href="#">All Mail</a></li>
@@ -199,52 +212,53 @@ body {
 															<li><a href="#">Promotion</a></li>
 															<li><a href="#">Update</a></li>
 															<li><a href="#">Forum</a></li>
-															<li class="divider"></li>
-															<li><a href="#">Citibank</a></li>
-															<li><a href="#">Icici</a></li>
 														</ul>
 													</div>
 												</div>
+												<div id="closeSearchContainer"
+													style="float: right; font-size: 14px; color: #ccc;">
+													<span>x</span>
+												</div>
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<span>From</span>
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<input type="text" id="from" style="width: 100%;">
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<span>To</span>
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<input type="text" id="to" style="width: 100%;">
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<span>Subject</span>
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<input type="text" id="subject" style="width: 100%;">
 											</div>
-											<div class="row">
+											<div class="row search-container-rows">
 												<span>Has the words</span>
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<input type="text" id="hasthewords" style="width: 100%;">
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<span>Doesn't have</span>
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<input type="text" id="doesnthave" style="width: 100%;">
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<label><input type="checkbox" value=""></label><span>
 													Has attachement</span>
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<label><input type="checkbox" value=""></label><span>
 													Don't include chats</span>
 											</div>
-											<div class="row">
+											<div class="row search-container-row">
 												<div
 													class="col-sm-1 vcenter-custom zero-padded-column-custom">
 													<span>Size </span>
@@ -255,7 +269,7 @@ body {
 														<button class="btn btn-default btn-sm dropdown-toggle"
 															type="button" data-toggle="dropdown">
 															Greater than <span class="dropup"><span
-																class="caret"></span></span><span class="caret down"></span>
+																class="caret"></span></span><span class="caret down search-container-caret"></span>
 														</button>
 														<ul class="dropdown-menu">
 															<li><a href="#">Greater than</a></li>
@@ -273,17 +287,49 @@ body {
 														<button class="btn btn-default btn-sm dropdown-toggle"
 															type="button" data-toggle="dropdown">
 															MB <span class="dropup"><span class="caret"></span></span><span
-																class="caret down"></span>
+																class="caret down search-container-caret"></span>
 														</button>
 														<ul class="dropdown-menu">
 															<li><a href="#">MB</a></li>
-															<li><a href="#">MB</a></li>
-															<li><a href="#">MB</a></li>
+															<li><a href="#">KB</a></li>
+															<li><a href="#">Bytes</a></li>
 														</ul>
 													</div>
 												</div>
 											</div>
-											<div class="row">
+
+											<div class="row search-container-row">
+												<div
+													class="col-sm-2 vcenter-custom zero-padded-column-custom">
+													<span>Date within </span>
+												</div>
+												<div
+													class="col-sm-2 vcenter-custom zero-padded-column-custom">
+													<div class="dropdown" id="size">
+														<button class="btn btn-default btn-sm dropdown-toggle"
+															type="button" data-toggle="dropdown">
+															1 day<span class="dropup"><span class="caret"></span></span><span
+																class="caret down search-container-caret"></span>
+														</button>
+														<ul class="dropdown-menu">
+															<li><a href="#">1 day</a></li>
+															<li><a href="#">3 days</a></li>
+															<li><a href="#">1 week</a></li>
+															<li><a href="#">3 weeks</a></li>
+														</ul>
+													</div>
+												</div>
+												<div
+													class="col-sm-1 vcenter-custom zero-padded-column-custom">
+													<span>of </span>
+												</div>
+												<div
+													class="col-sm-2 vcenter-custom zero-padded-column-custom">
+													<input type="text" id="emailSize" style="width: 100%;">
+												</div>
+											</div>
+
+											<div class="row search-container-row">
 												<div class="col-sm-1">
 													<button type="submit" class="btn btn-primary btn-sm">
 														<span class="glyphicon glyphicon-search"> </span>
@@ -291,8 +337,8 @@ body {
 												</div>
 											</div>
 										</div>
-									</li>
-								</ul>
+									</div>
+								</div>
 							</div>
 						</form>
 						<button type="submit" class="btn btn-primary"
@@ -300,7 +346,7 @@ body {
 							<span class="glyphicon glyphicon-search"> </span>
 						</button>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-4">
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#" data-toggle="tooltip" data-placement="top"
 								title="Looking for google+? Click on Google Apps icon on right.">Prabin</a></li>
@@ -318,7 +364,7 @@ body {
 					</div>
 				</div>
 			</div>
-			<div class="row xs-hide-panel sm-hide-panel"
+			<div class="row sm-hide-panel"
 				style="background-color: white; height: 50px; letter-spacing: -4px">
 				<div class="col-sm-2 vcenter-custom">
 					<div class="dropdown vcenter-custom">
@@ -423,7 +469,8 @@ body {
 				</ul>
 			</nav>
 			<div class="col-sm-10 col-xs-12">
-				<ul class="nav nav-tabs nav-justified light-gray-background" id="emailTabs">
+				<ul class="nav nav-tabs nav-justified light-gray-background"
+					id="emailTabs">
 					<li class="active"><a data-toggle="tab" href="#primary"><span
 							class="glyphicon glyphicon-inbox"></span> Primary</a></li>
 					<li><a data-toggle="tab" href="#social"><span

@@ -28,7 +28,11 @@ $(document).ready(function(){
   });
   
   $('#selectAllMessages').click(function(){
-    $('#messageTabs > .active input[type=checkbox]').click();
+    if (checkbox = $(this).is(':checked')==true){
+      $('#messageTabs > .active input[type=checkbox]').prop('checked', true);
+    } else {
+      $('#messageTabs > .active input[type=checkbox]').prop('checked', false);
+    }
   });
   
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
@@ -51,6 +55,15 @@ $(document).ready(function(){
     }
   });
   
+  $('#searchCaret').click(function(){
+    $('#searchContainer').show();
+    $('#searchCaret').hide();
+  });
+  
+  $('#closeSearchContainer').click(function(){
+    $('#searchContainer').hide();
+    $('#searchCaret').show();
+  });
 });
 
 
